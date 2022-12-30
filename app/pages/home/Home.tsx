@@ -6,18 +6,14 @@ import Meta from '@/utils/meta'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <>
       <Meta title='Title' description='Description' />
+      <div className={styles.container}>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href='https://nextjs.org'>Next.js!</a>
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
         <div className={styles.grid}>
           <a href='https://nextjs.org/docs' className={styles.card}>
             <h2>Documentation &rarr;</h2>
@@ -57,6 +53,7 @@ const Home: NextPage = () => {
         </a>
       </footer>
     </div>
+    </>
   )
 }
 
