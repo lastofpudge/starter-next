@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run next",
+    "next": "next dev",
+    "server": "json-server --watch db.json --port 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.18.1",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
@@ -20,6 +23,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
+    "json-server": "^1.0.0-alpha.23",
     "sass": "^1.70.0",
     "typescript": "^5"
   }

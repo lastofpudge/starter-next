@@ -3,6 +3,7 @@
 import styles from '@/components/Home/home.module.scss'
 import { useCounterStore } from '@/store/counterStore'
 
+
 const HomeComponent = () => {
   const { count, increment, decrement } = useCounterStore()
 
