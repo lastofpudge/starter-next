@@ -4,6 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+.yarn/install-state.gz
+
+# ide
+.idea
 
 # testing
 /coverage
@@ -11,8 +15,6 @@
 # next.js
 /.next/
 /out/
-
-/.vscode/
 
 # production
 /build
@@ -25,7 +27,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
 # local env files
 .env*.local
