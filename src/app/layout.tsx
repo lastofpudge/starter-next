@@ -6,6 +6,16 @@ import { Metadata, Viewport } from 'next'
 
 const inter = Inter({ subsets: ['latin'] })
 
+export default function RootLayout({ children }: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang='en'>
+    <body className={inter.className}><ReactQueryProvider>{children}</ReactQueryProvider></body>
+    </html>
+  )
+}
+
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
@@ -49,14 +59,4 @@ export const metadata: Metadata = {
     shortcut: '/favicon.ico',
     apple: '/favicons/apple-touch-icon.png'
   }
-}
-
-export default function RootLayout({ children }: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang='en'>
-    <body className={inter.className}><ReactQueryProvider>{children}</ReactQueryProvider></body>
-    </html>
-  )
 }
