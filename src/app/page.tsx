@@ -1,4 +1,4 @@
-import styles from '../components/Home/home.module.scss'
+import styles from '@/components/Home/home.module.scss'
 import HomeComponent from '@/components/Home'
 import { HomeService } from '@/services/home.service'
 
